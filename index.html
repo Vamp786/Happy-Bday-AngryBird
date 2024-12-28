@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>HBD love </title>	    
         <link type="text/css" rel="stylesheet" href="./file/default.css">
@@ -18,6 +18,22 @@
             }
         </script>
 	    <style type="text/css">
+            .balloon-button {
+                display: inline-block;
+                background-color: #25D366; /* WhatsApp green */
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 15px 30px;
+                border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Balloon shape */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s ease;
+                margin-top: 20px;
+            }
+
+            .balloon-button:hover {
+                transform: scale(1.1); /* Enlarge on hover */
+            }
         </style>
 </head>
     <body>
@@ -50,6 +66,11 @@
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
+            </div>
+
+            <!-- Balloon Button -->
+            <div style="text-align: center;">
+                <a href="https://wa.link/b5i6sb" class="balloon-button" target="_blank">Chat Now</a>
             </div>
             
         </div>
@@ -216,3 +237,4 @@
         runAsync().start();
     })();
     </script></body></html>
+
